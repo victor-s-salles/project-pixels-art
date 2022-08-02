@@ -26,11 +26,19 @@ function pintarPixels(){
         console.log(colorSelecionada);
         if(pixelSelected.classList == 'pixel'){
         pixelSelected.id = colorSelecionada.id; }
-
-
     })
-
-    
-
 }
 pintarPixels();
+
+function clearAll(){
+    let button = document.getElementById('clear-board');
+    let pixels = document.querySelectorAll('.pixel');
+    button.addEventListener('click', function(){
+
+        for(let index = 0; index < pixels.length ; index +=1 ){
+           pixels[index].id = '';
+        }
+    })
+
+}
+clearAll();
