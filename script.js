@@ -66,7 +66,7 @@ function pintarPixels() {
     const colorSelecionada = document.querySelector('.selected');
     console.log(colorSelecionada);
     if (pixelSelected.classList == 'pixel') {
-      pixelSelected.id = colorSelecionada.id;
+      pixelSelected.style.backgroundColor = colorSelecionada.style.backgroundColor;
     }
   });
 }
@@ -77,8 +77,27 @@ function clearAll() {
   const pixels = document.querySelectorAll('.pixel');
   button.addEventListener('click', () => {
     for (let index = 0; index < pixels.length; index += 1) {
-      pixels[index].id = '';
+      pixels[index].style.backgroundColor = 'white';
     }
   });
 }
+
 clearAll();
+
+function gerar_cor_hexadecimal() {
+  return `#${parseInt((Math.random() * 0xFFFFFF))
+    .toString(16)
+    .padStart(6, '0')}`;
+}
+function genColors() {
+  const color1 = document.getElementById('red');
+  const color2 = document.getElementById('yellow');
+  const color3 = document.getElementById('blue');
+  const colorBlack = document.getElementById('black');
+
+  color1.style.backgroundColor = gerar_cor_hexadecimal();
+  color2.style.backgroundColor = gerar_cor_hexadecimal();
+  color3.style.backgroundColor = gerar_cor_hexadecimal();
+  colorBlack.style.backgroundColor = 'black';
+}
+genColors();
