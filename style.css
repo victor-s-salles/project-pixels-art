@@ -16,3 +16,10 @@
 #blue {
     background-color: blue;    
 }
+.pixel{
+    width:40px;
+    height:40px;
+    border: solid black 1px;
+    display: inline-block;
+    background-color: white;
+}
