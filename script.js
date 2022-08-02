@@ -10,8 +10,27 @@ function selectedColor(){
         }
         
         colorClicked.classList.add('selected');
-        console.log(colorClicked);
+    
     }
     })
 }
 selectedColor();
+
+function pintarPixels(){
+    
+    let pixelBord = document.getElementById("pixel-board");
+    pixelBord.addEventListener('click', function(event){
+        let pixelSelected = event.target;
+        console.log(pixelSelected);
+        let colorSelecionada = document.querySelector('.selected');
+        console.log(colorSelecionada);
+        if(pixelSelected.classList == 'pixel'){
+        pixelSelected.id = colorSelecionada.id; }
+
+
+    })
+
+    
+
+}
+pintarPixels();
