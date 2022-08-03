@@ -22,8 +22,18 @@
     border: solid black 1px;
     display: inline-block;
     background-color: white;
+    margin-bottom: -5px;
 }
 #clear-board{
     padding: 8px;
     margin: 5px;   
+}
+*{
+    text-align: center;
+}
+body {
+    background-color:rgb(209, 209, 209);
+}
+p {
+ display: inline-block;
 }
