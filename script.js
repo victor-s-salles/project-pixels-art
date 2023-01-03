@@ -67,6 +67,7 @@ function pintarPixels() {
     console.log(colorSelecionada);
     if (pixelSelected.classList == 'pixel') {
       pixelSelected.style.backgroundColor = colorSelecionada.style.backgroundColor;
+      console.log(colorSelecionada);
     }
   });
 }

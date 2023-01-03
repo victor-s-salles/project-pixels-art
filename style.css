@@ -3,6 +3,7 @@
     height:60px;
     border: solid black 1px;
     display: inline-block;
+    border-radius: 50px;
 }
 #black {
     background-color: black;    
@@ -33,7 +34,18 @@
 }
 body {
     background-color:rgb(209, 209, 209);
+    background-image:url(fundo.jpg);
+    background-size: cover;
+    /* background-size: auto; */
 }
 p {
  display: inline-block;
+}
+#pixel-board {
+    border: solid black 10px;
+    display: inline-block;
+    border-radius: 5%;
+}
+button { 
+  border-radius: 5px;
 }
